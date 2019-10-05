@@ -1,0 +1,75 @@
+.advantage {
+  background-color: #f4f4f4;
+
+  &__our {
+      h4{
+        padding-top: 80px;
+      }
+    .advantage__carts {
+      .row-flex();
+      justify-content: center;
+      flex-direction: row;
+      padding-top: 60px;
+      padding-bottom: 80px;
+
+      .advantage__cart {
+        .col();
+        .size(4);
+        .size-m(5);
+        .size-sm(7);
+        .size-xs(8);
+        border: solid 2px @color_white;
+        background-color: #f4f4f4;
+        padding-bottom: 43px;
+
+        .cart__img {
+          padding-top: 40px;
+          justify-content: center;
+          display: flex;
+
+          img {
+
+          }
+        }
+
+        .advantage__price {
+          padding-top: 40px;
+
+          p {
+            font-family: @font_m;
+            font-size: .9375em;
+            color: @color_black;
+            text-align: center;
+          }
+        }
+
+        .advantage__work {
+          padding-top: 20px;
+          align-self: center;
+          max-width: 240px;
+          margin-left: 25px;
+          .md(margin,0);
+
+          p {
+            font-size: .75em;
+            line-height: 1.5;
+            text-align: center;
+            color: #292929;
+          }
+        }
+
+        &:hover {
+          border: none;
+          background-color: @color_white;
+          cursor: pointer;
+        }
+        &:nth-child(2){
+          .sm-block({margin-top:30px; })
+        }
+        &:nth-child(3){
+          .m-block({margin-top: 30px})
+        }
+      }
+    }
+  }
+}

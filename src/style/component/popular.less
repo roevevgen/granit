@@ -1,0 +1,88 @@
+.popular{
+  &__section{
+    h4{
+      padding-top: 80px;
+    }
+    .popular__cart{
+      .row-flex();
+      justify-content: center;
+      padding-top: 60px;
+      padding-bottom: 80px;
+      .popular__shebeen{
+        .col();
+        .size(3);
+        .size-mds(4);
+        .size-xs(5);
+        .size-xsl(8);
+        border: solid 2px #f6f6f6;
+        .popular__img{
+          display: flex;
+          justify-content: center;
+          padding-top: 15px;
+          img{
+            .xxs-block({width:80%});
+          }
+        }
+        .popular__granite{
+          padding-top: 20px;
+          p{
+            font-size: .8125em;
+            text-align: center;
+            color: @color_black;
+            text-decoration: underline;
+          }
+        }
+        .popular__canad{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding-top: 24px;
+          .crush{
+            text-decoration: line-through;
+            font-size: .625em;
+            color: #979797;
+          }
+          span{
+            margin-left: 14px;
+            font-family: @font_m;
+            color: @color_red;
+          }
+          p{
+            font-family: @font_m;
+            color: @color_blak;
+          }
+        }
+        .popular__btn{
+          padding-top: 25px;
+          padding-bottom: 20px;
+          .row-flex();
+          justify-content: center;
+            button{
+              border: none;
+              padding: 15px 60px;
+              background-color: @color_yel;
+              font-size: .75em;
+              font-family: @font_m;
+              line-height: 1.83;
+              color: @color_bla;
+              &:hover{
+                background: @color_grey;
+                color: @color_yellow;
+                cursor: pointer;
+              }
+
+            }
+        }
+        &:nth-child(2){
+          .xsl-block({margin-top: 30px;});
+        }
+        &:nth-child(3){
+          .xs-block({margin-top: 30px;});
+        }
+        &:nth-child(4){
+          .mds-block({margin-top: 30px;});
+        }
+      }
+    }
+  }
+}

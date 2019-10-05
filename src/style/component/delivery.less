@@ -1,0 +1,70 @@
+.delivery {
+  background: url("@{path_img}/header.png") no-repeat  center top;
+  overflow: visible;
+  height:550px;
+
+  &__quick {
+    .delivery__fast {
+      .delivery__fasts {
+        padding-top: 170px;
+        h2 {
+          font-family: @font_b;
+          font-size: 36px;
+          color: @color_white;
+          text-transform: uppercase;
+        }
+      }
+
+      p {
+        font-size: .875em;
+        font-family: @font_l;
+        line-height: 1.57;
+        color: @color_white;
+        max-width: 240px;
+        padding-top: 40px;
+      }
+
+      .delivery__catalog {
+        padding-bottom: 140px;
+
+        button {
+          background: @color_yellow;
+          cursor: pointer;
+          font-size: .75em;
+          font-family: @font_m;
+          line-height: 1.83;
+          color: @color_bla;
+          border: none;
+          padding: 15px 20px;
+          margin-top: 65px;
+
+          &:hover {
+            background: @color_bla;
+            color: @color_yellow;
+            border: 1px solid @color_white;
+          }
+        }
+
+        span {
+          font-size: .75em;
+          font-family: @font_l;
+          line-height: 1.83;
+          color: @color_white;
+          padding-left: 31px;
+        }
+
+        a {
+          font-size: .9em;
+          font-family: @font_m;
+          line-height: 1.83;
+          color: @color_white;
+          padding-left: 15px;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

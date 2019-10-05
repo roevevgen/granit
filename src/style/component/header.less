@@ -1,0 +1,70 @@
+.granit {
+    &__ser {
+      .row-flex();
+      justify-content: space-between;
+      padding-top: 30px;
+      padding-bottom: 35px;
+      .xs-block({justify-content: center});
+      .granit__gran {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .granit__granits{
+          padding-right: 14px;
+        }
+        .granit__header {
+          span {
+            font-size: 1.25em;
+            font-family: @font_b;
+            line-height: 1.1;
+            letter-spacing: 2px;
+            color: @color_black;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-size: 11px;
+            font-family: @font_l;
+            line-height: 2;
+            color: @color_grey;
+          }
+        }
+      }
+      .granit__home {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .granit__tell {
+          padding-right: 31px;
+          span {
+            font-size: 1.25em;
+            font-family: @font_b;
+            font-weight: bold;
+            line-height: 1.22;
+            color: @color_black;
+          }
+
+          p {
+            font-size: 11px;
+            font-family: @font_l;
+            line-height: 2;
+            color: @color_grey;
+          }
+        }
+
+        .granit__back {
+          .btn__granit {
+            padding: 8px 15px;
+            cursor: pointer;
+            border: solid 2px @color_black;
+            font-family: @font_m;
+            font-size: 12px;
+            line-height: 1.83;
+            color: @color_black;
+          }
+        }
+      }
+
+    }
+  }
+
